@@ -19,7 +19,7 @@ function Manoj()
   var mark1 = 35,mark2 = 25;
   var avg=67;
   var result = "fail";
-  var arr = [18,29,38,46,53,62];
+  var arr = [88,99,36,45,54,63];
   var sobj = {
     rollno : 1001,
     name : "Manoj",
