@@ -10,7 +10,7 @@ class App extends React.Component
 }
 export default App*/
 
-import myimg from './images/Manoj_2.jpg'
+/*import myimg from './images/Manoj_2.jpg'
 function Manoj()
 {
   var a = 10;
@@ -84,10 +84,190 @@ function Manoj()
    <h2>Student tamil mark: {subj.subjects.tamil}</h2> 
    <h2>Student english mark: {subj["subjects"]["English"]}</h2> 
    <h2>Student maths mark: {subj.subjects["maths"]}</h2> 
+
+   <h1>Array with JSON</h1>
+
     </>   
   )
 }
+export default Manoj*/
+
+/*function Manoj()
+{
+  var sobj={
+    rno: 1001,
+    name:"manoj",
+    subjects:[100,77,88]
+  };
+  var sobj1=[{
+    sno: 1,
+    sname: "ramesh",
+    mark: 99
+  },
+  {
+    sno: 2,
+    sname:"Karthi",
+    mark:98
+  },
+  {
+    sno: 3,
+    sname: "abinaya",
+    mark: 94
+  }]
+return(
+  <>
+    <h1>React JSON with array</h1>
+    <h2>Roll number:{sobj.rno}</h2>
+    <h2>Student name: {sobj.name}</h2>
+    <h2>Mark1:{sobj["subjects"][0]}</h2>
+    <h2>Mark2:{sobj["subjects"][1]}</h2>
+    <h2>Mark3:{sobj.subjects[2]}</h2>
+
+    <h1>Array with JSON</h1>
+    <h2>Student 1</h2>
+    <h2>Roll no:{sobj1[0]["sno"]}</h2>
+    <h2>Name:{sobj1[0].sname}</h2>
+    <h2>Mark3:{sobj1[0].mark}</h2>
+
+    <h2>Student 2</h2>
+    <h2>Roll no:{sobj1[1]["sno"]}</h2>
+    <h2>Name:{sobj1[1].sname}</h2>
+    <h2>Mark3:{sobj1[1].mark}</h2>
+
+    <h2>Student 3</h2>
+    <h2>Roll no:{sobj1[2]["sno"]}</h2>
+    <h2>Name:{sobj1[2].sname}</h2>
+    <h2>Mark3:{sobj1[2].mark}</h2>
+
+  </>
+)
+};
+export default Manoj*/
+
+/*function Manoj(){
+
+  const dis= ()=> {
+    alert("test arrow function")
+    document.getElementById("res").innerHTML = "button clicked";
+  }
+   var dis1 = (a,b,c)=> {
+    var tot = a+b+c;
+    document.getElementById("res1").innerHTML = "Total = "+tot;
+   }
+
+   var a=10;
+   let b=20;
+   const c=30;
+   if(true)
+   {
+    let d=10;
+    const e=20;
+    a++;b++;d++;
+    //c++; e++; --->  throws error bcoz of constant value increment
+   }
+  return(
+    <>
+    <h1>Arrow function without parameter</h1>
+    <button onClick={dis}>click me</button>
+    <div id="res"></div>
+    <h1>Arrow function with arguments</h1>
+    <button onClick={()=>dis1(10,20,30)}>click me</button>
+    <div id="res1"></div>
+    <h1>var,let,const</h1>
+    <h3>a: {a}</h3>
+    <h3>b: {b}</h3>
+    <h3>c: {c}</h3>
+     // <h3>d: {d}</h3> --> shows error bcoz of local scope 
+    // <h3>e: {e}</h3> --> shows error bcoz of local scope
+    </>
+  )
+};
+export default Manoj */
+
+/*function Manoj(){
+
+  var [a1,a2,a3,...a4] = [11,22,33,44,55,66];
+  var [b1,b2,,b4] = [100,200,300,400];
+  var disp = (a,b) => {
+    var add = a+b;
+    var sub = a-b;
+    var mul = a*b;
+    var div = a/b;
+    //console.log(typeof(a4))
+    return[add,sub,mul,div]
+  }
+  var [v1,v2,v3,v4] = disp(10,20);
+  var sobj={
+    rno:1,
+    sname: "Manoj Kumar",
+    mark: 99
+  }
+  var show=({rno,sname,mark})=>{
+    return [rno,sname,mark]
+  }
+  var [ov1,ov2,ov3] = show(sobj);
+
+  var stud={
+    sno: 1991,
+    sname: "kavi",
+    marks:{
+      tamil: 99,
+      english: 98,
+      maths: 100,
+    }
+  }
+
+  var ndisp=({sno,sname,marks:{tamil,english,maths}})=>{
+    return[sno,sname,tamil,english,maths];
+  }
+
+  var [r1,n1,m1,m2,m3] = ndisp(stud);
+  return(
+    <>
+    <h1>Array destruction</h1>
+    <h3>index 0:{a1}</h3>
+    <h3>index 1:{a2}</h3>
+    <h3>index 2:{a3}</h3>
+    <h3>index 3:{a4}</h3>
+
+    <h1>Function destruction</h1>
+    <h3>value 1:{v1}</h3>
+    <h3>value 2:{v2}</h3>
+    <h3>value 3:{v3}</h3>
+    <h3>value 4:{v4}</h3>
+
+    <h1>Object destruction</h1>
+    <h3>rno: {ov1}</h3>
+    <h3>name: {ov2}</h3>
+    <h3>mark:{ov3}</h3>
+
+    <h1>Nested object destruction</h1>
+    <h3>Rno: {r1}</h3>
+    <h3>Student name: {n1}</h3>
+    <h3>mark1: {m1}</h3>
+    <h3>mark2: {m2}</h3>
+    <h3>mark3: {m3}</h3>
+    </>
+  )
+}
+export default Manoj */
+
+function Manoj(){
+
+  var arr = [11,22,33,44,55,66,77,88,99];
+  return(
+    <>
+      <h1>React Loop - Array methods map</h1>
+      <ol>
+        {arr.map(val=><li>{val}</li>)}
+      </ol>
+    </>
+  )
+}
 export default Manoj
+
+
+/* Default REACT App components */
 /*import logo from './logo.svg';
 import './App.css';
 
