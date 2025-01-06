@@ -10,6 +10,27 @@ class App extends React.Component
 }
 export default App*/
 
+import Failcomponents from "./components/Failcomponents";
+import Successcomponents from "./components/Successcomponents";
+import {name, place, age, data, photo} from "./components/Commonfilevar"
+
+function Manoj()
+{
+  var test = true;
+  return(
+    <>
+      <h1>Ternary operator and import and export options</h1>
+      <h3>{test?<Successcomponents />:<Failcomponents/>}</h3>
+      {name}
+      {place}
+      {age}
+      {data}
+      <img src={photo} alt="manoj in CSIR-SERC" height='200px' width='300px'></img>
+    </>
+  )
+}
+export default Manoj
+
 /*import myimg from './images/Manoj_2.jpg'
 function Manoj()
 {
@@ -252,19 +273,35 @@ export default Manoj */
 }
 export default Manoj */
 
-function Manoj(){
+// function Manoj(){
 
-  var arr = [11,22,33,44,55,66,77,88,99];
-  return(
-    <>
-      <h1>React Loop - Array methods map</h1>
-      <ol>
-        {arr.map(val=><li>{val}</li>)}
-      </ol>
-    </>
-  )
-}
-export default Manoj
+//   var arr = [11,22,33,44,55,66,77,88,99];
+//   var [a,b,...c] = arr;
+//   console.log(typeof(c));
+//   console.log(Array.isArray(c));
+//   //var s = 0;
+//   return(
+//     <>
+//       <h1>React Loop - Array methods map</h1>
+//       <ol>
+//         {arr.map((val,i)=><li key={i}>{val}</li>)}  
+//         {/* Here i represents the index of the mapping element */}
+//         {/* {arr.map((val,s)=><li key={s+1}>{val} {s+1}</li>)} */}
+//       </ol>
+
+//       <h1>Spread operator</h1>
+//       <h3>index 0: {a}</h3>
+//       <h3>index 1: {b}</h3>
+//       <h3>index 2 onwards : {c}</h3>
+
+//       <ol>
+//         {c.map((val,i)=><li key={i}>{val}</li>)}
+//       </ol>
+//     </>
+//   )
+// }
+// export default Manoj
+
 
 
 /* Default REACT App components */
