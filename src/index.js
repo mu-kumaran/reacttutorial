@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Manoj from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+var sobj = {
+  rno: 1991,
+  sname: "manoj kumar",
+  test: "true",
+  avg: 88.5,
+  tamil: 99,
+  english: 88,
+  maths: 48
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Manoj />
+    {/* <App name="manojkumar" rno="1001" mark="99"/> */}
+    <App myobj={sobj}/>
   </React.StrictMode>
 );
 

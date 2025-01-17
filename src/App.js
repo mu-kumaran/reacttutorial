@@ -10,9 +10,62 @@ class App extends React.Component
 }
 export default App*/
 
-import Failcomponents from "./components/Failcomponents";
+function App(props){
+
+  return(
+    <>
+    <h1><center>1. Props passing as normal json object</center></h1>
+    <h2>Student Roll number:{props.myobj.rno}</h2>
+    <h2>Student name:{props.myobj.sname}</h2>
+    <h2>Student mark average:{props.myobj.avg}</h2>
+    <h2>Student valid id:{props.myobj.test}</h2>
+    <h2>Student tamil mark:{props.myobj.tamil}</h2>
+    <h2>Student english mark:{props.myobj.english}</h2>
+    <h2>Student maths mark:{props.myobj.maths}</h2>
+    </>
+  )
+}
+export default App
+
+/*function App(props){
+
+  return(
+    <>
+    <h1><center>1. Props basic</center></h1>
+    <h2>Student Roll number:{props.rno}</h2>
+    <h2>Student name:{props.name}</h2>
+    <h2>Student mark:{props.mark}</h2>
+    </>
+  )
+}
+export default App*/
+
+/*import './mycss/style.css'
+function App(){
+  const mystyle={
+    fontFamily: "Algerian Regular",
+    fontSize: "44px",
+    border:"4px double green",
+    color:"red",
+    backgroundColor: "pink"
+  }
+
+  return(
+    <div>
+    <h1>Welcome to React CSS Inline and Internal</h1>
+    <h2 style={{backgroundColor:"red",color:"white",fontSize:"22px",fontFamily:"arial"}}>This is header 2</h2>
+    <h3 style={mystyle}>This is header3</h3>
+    <h3 style={mystyle}>This is header3</h3>
+    <h3 style={mystyle}>This is header3</h3>
+    <h5>Welcome to External CSS</h5>
+    </div>
+  )
+}
+export default App*/
+
+/*import Failcomponents from "./components/Failcomponents";
 import Successcomponents from "./components/Successcomponents";
-import {name, place, age, data, photo} from "./components/Commonfilevar"
+import {name, place, age, data, photo} from "./components/Commonfilevar";
 
 function Manoj()
 {
@@ -29,7 +82,7 @@ function Manoj()
     </>
   )
 }
-export default Manoj
+export default Manoj */
 
 /*import myimg from './images/Manoj_2.jpg'
 function Manoj()

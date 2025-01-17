@@ -1,0 +1,18 @@
+h5{
+    font-size: 33px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 10px solid green;
+    border-radius: 20px;
+    color: white;
+}
+
+div{
+    background-color: orange;
+    background-image: url("../images/Manoj_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+}
