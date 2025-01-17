@@ -4,7 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+//Nested JSON object
 var sobj = {
+  rno: 1991,
+  sname: "manoj kumar",
+  test: "true",
+  marks:{
+    avg: 88.5,
+    tamil: 99,
+    english: 88,
+    maths: 48
+  }  
+}
+// Normal JSON object 
+/*var sobj = {
   rno: 1991,
   sname: "manoj kumar",
   test: "true",
@@ -12,7 +26,7 @@ var sobj = {
   tamil: 99,
   english: 88,
   maths: 48
-}
+}*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

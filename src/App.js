@@ -1,3 +1,150 @@
+
+//Event handling
+
+//React Event - onFocus, onBlur
+function App()
+{
+  const dis1 = ()=>{
+    document.getElementById('res').innerHTML = "Cursor inside textbox"
+    document.getElementById("t1").style.backgroundColor = "green";
+    document.getElementById("t1").style.color = "white";
+  }
+
+  const dis2 = ()=>{
+    document.getElementById('res').innerHTML = "Cursor outside textbox"
+    document.getElementById("t1").style.backgroundColor = "red";
+    document.getElementById("t1").style.color = "white";
+  }
+  return(
+    <>
+    <center><h2>React Event - onFocus, onBlur</h2></center>
+    <input type="text" onFocus={dis1} onBlur={dis2} id="t1"></input>
+    <div id="res"></div>
+    </>
+  )
+}
+export default App
+//React Event - onChange
+/*function App()
+{
+  var data;
+  const show = () =>{
+    data = document.getElementById("t1").value;
+    document.getElementById("res").innerHTML = data;
+  } 
+  return (
+    <>
+    <center><h1>React event - onChange</h1></center>
+    <input type="text" onChange={show} id="t1" placeholder="Enter data"></input>
+    <div id="res"></div>
+    </>
+  )
+}
+export default App*/
+
+//React Event - onClick
+/*function App(){
+  var m1 = 100;
+  var m2 = 200;
+  const disp = () =>{
+    var a = parseInt(document.getElementById("t1").value)
+    var b = parseInt(document.getElementById("t2").value)
+    document.getElementById("res1").innerHTML = "Sum = "+(a+b);
+    document.getElementById("res2").innerHTML = "m1+m2 = "+(m1+m2);
+  }
+  return(
+    <form>
+      <h2>React Event - onClick</h2>
+      Enter num1: <input type="text" id="t1" placeholder="Enter number 1"></input>
+      <br></br>
+      Enter num2: <input type="text" id="t2" placeholder="Enter number 2"></input>
+      <br></br>
+      <input type="button" onClick={disp} value='Sum'></input>
+      <div id="res1"></div>
+      <div id="res2"></div>
+      {m1+m2}
+    </form>
+  )
+}
+export default App*/
+
+//React Forms
+/*import React from 'react'
+
+const App = () => {
+  return (
+   <form>
+    <h2>React Forms</h2>
+    Name:<input type='text' value='manoj kumar'></input><br></br>
+    Mobile no:<input type='number'></input><br></br>
+    <label>Enter password: <input type='password'></input></label><br></br>
+    <p>Select gender :</p>
+    <input type='radio' name='gen'></input>Male
+    <input type='radio' name='gen'></input>Female
+    <input type='radio' name='gen'></input>Others
+    <p>Select programming language: </p>
+    <input type='checkbox'></input>C
+    <input type='checkbox'></input>C++
+    <input type='checkbox'></input>Java
+    <br></br>
+    <textarea rows="4" cols="20"></textarea>
+    <br></br>
+    <p>Select month</p>
+    <select>
+      <option>January</option>
+      <option>February</option>
+      <option>March</option>
+      <option>April</option>
+      <option>May</option>
+      <option>June</option>
+    </select>
+    <br></br>
+    Email:<input type='email'></input><br></br>
+    Date:<input type='date'></input><br></br>
+    Time:<input type='time'></input><br></br>
+    Week:<input type='week'></input><br></br>
+    File:<input type='file'></input><br></br>
+    Range:<input type='range' min='0' max='1'></input><br></br>
+    <input type='button' value='clickme'></input>
+    <input type='submit' value='submit'></input>
+    <button>CLICKME</button>
+    <input type='hidden' value='100' name='h1'></input>
+    <br></br>
+    <input type='reset' value="clear"></input>
+    <br></br>
+   </form>
+  )
+}
+
+export default App*/
+
+//Passing argument using class constructor
+/*import React from 'react'
+class App extends React.Component
+{
+  constructor(props)
+  {
+    super(props)
+    this.state = props;
+  }
+  render()
+  {
+    return(
+      <>
+        <h1><center>Passing argument using class constructor</center></h1>
+        <h2>Student Roll number:{this.props.myobj.rno}</h2>
+        <h2>Student name:{this.props.myobj.sname}</h2>
+        <h2>Student mark average:{this.props.myobj.marks.avg}</h2>
+        <h2>Student tamil mark:{this.props.myobj.marks.tamil}</h2>
+        <h2>Student english mark:{this.props.myobj.marks["english"]}</h2>
+        <h2>Student maths mark:{this.props.myobj["marks"]["maths"]}</h2>
+      </>
+    )
+  }
+}
+
+export default App*/
+
 /*import React from 'react';
 class App extends React.Component
 {
@@ -10,7 +157,26 @@ class App extends React.Component
 }
 export default App*/
 
-function App(props){
+//Passing Nested JSON object
+/*function App(props){
+    return(
+      <>
+      <h1><center>1. Props passing as nested JSON object</center></h1>
+      <h2>Student Roll number:{props.myobj.rno}</h2>
+      <h2>Student name:{props.myobj.sname}</h2>
+      <h2>Student mark average:{props.myobj.marks.avg}</h2>
+      <h2>Student tamil mark:{props.myobj.marks.tamil}</h2>
+      <h2>Student english mark:{props.myobj.marks["english"]}</h2>
+      <h2>Student maths mark:{props.myobj["marks"]["maths"]}</h2>
+
+      </>
+    )
+
+}
+export default App*/
+
+//Passing normal JSON object
+/*function App(props){
 
   return(
     <>
@@ -25,7 +191,7 @@ function App(props){
     </>
   )
 }
-export default App
+export default App*/
 
 /*function App(props){
 
