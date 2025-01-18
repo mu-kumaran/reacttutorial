@@ -1,8 +1,139 @@
+//React - Event.target.type
+
+/*const App = () => {
+  const dis = (e)=>{
+    document.getElementById("res").innerHTML = e.target.type + "working...";
+  }
+  return (
+    <>
+      <h1><u>Event.target.type usage</u></h1>
+      <input type="text" onChange={(e)=>dis(e)}></input><br></br>
+      <input type="password" onChange={(e)=>dis(e)}></input><br></br>
+      <input type="file" onChange={(e)=>dis(e)}></input><br></br>
+      <input type="radio" onChange={(e)=>dis(e)}></input>Male<br></br>
+      <input type="radio" onChange={(e)=>dis(e)}></input>Female<br></br>
+      <input type="radio" onChange={(e)=>dis(e)}></input>Others<br></br>
+      <input type="checkbox" onChange={(e)=>dis(e)}></input>C++<br></br>
+      <div id="res"></div>
+    </>
+  )
+}
+
+export default App*/
+
+//React - Event.target.tagname
+
+/*const App = () => {
+  const dis = (e)=>{
+    document.getElementById("res").innerHTML = e.target.tagName + "working...";
+  }
+  return (
+    <>
+    <h1><u>Event.target.tagname usage</u></h1>
+      <input type="text" onChange={(e)=>dis(e)}></input><br></br>
+      <textarea rows="6" cols="20" onChange={(e)=>dis(e)}></textarea><br></br>
+      <select onChange={(e)=>dis(e)}>
+      <option>Sunday</option>
+      <option>Monday</option>
+      <option>Tuesday</option>
+      <option>Wednesday</option>
+      <option>Thursday</option>
+      <option>Friday</option>
+      <option>Saturday</option>
+      </select>
+      <div id="res"></div>
+    </>
+  )
+}
+
+export default App*/
+
+//React - Event.target.name
+
+/*const App = () => {
+  const dis =(e) =>{
+    var k = e.target.value
+    document.getElementById("res").innerHTML = k+" is typing in..."+e.target.name+" box";
+  } 
+  return (
+    <div>
+      <h1><u>Event.target.name usage</u></h1>
+      Username: <input type="text" id="username" name="user" onChange={(event)=>dis(event)}></input><br></br>
+      Password: <input type="password" id="password" name="pwd" onChange={(event)=>dis(event)}></input><br></br>
+      City: <input type="text" id="city" name="city" onChange={(event)=>dis(event)}></input><br></br>
+      <div id="res"></div>
+    </div>
+  )
+  
+}
+
+export default App */
+
+//React - Event.target.id
+
+/*const App = () => {
+  const dis =(e) =>{
+    var k = e.target.value
+    document.getElementById("res").innerHTML = k+" is typing in..."+e.target.id+" box";
+  } 
+  return (
+    <div>
+      <h1><u>Event.target.id usage</u></h1>
+      Username: <input type="text" id="username" onChange={(event)=>dis(event)}></input><br></br>
+      Password: <input type="password" id="password" onChange={(event)=>dis(event)}></input><br></br>
+      City: <input type="text" id="city" onChange={(event)=>dis(event)}></input><br></br>
+      <div id="res"></div>
+    </div>
+  )
+}
+
+export default App*/
+
+//React - Event.target.value
+
+/*const App = () => {
+  const dis =(e) =>{
+    var k = e.target.value
+    document.getElementById("res").innerHTML = k;
+  } 
+  return (
+    <div>
+      <h1><u>Event.target.value usage</u></h1>
+      <input type="text" onChange={(event)=>dis(event)}></input><br></br>
+      <input type="text" onChange={(event)=>dis(event)}></input><br></br>
+      <input type="text" onChange={(event)=>dis(event)}></input><br></br>
+      <div id="res"></div>
+    </div>
+  )
+}
+
+export default App*/
 
 //Event handling
 
+//React Event - onSubmit
+/*function App(){
+  const disp = (event)=>{
+    event.preventDefault()  //will not allow to refresh
+    document.getElementById("res").innerHTML = "Submit button pressed";
+  }
+  return(
+    <center>
+      <h1>React - onSubmit event</h1>
+      <form onSubmit={(e) => disp(e)}>
+        <input type="text"></input>
+        <input type="submit"></input>
+        <button>clickme</button>
+        <input type="button" value="clickmenormal"></input>
+        <div id="res"></div>
+      </form>
+    </center>
+  )
+}
+export default App*/
+
 //React Event - onFocus, onBlur
-function App()
+/*function App()
 {
   const dis1 = ()=>{
     document.getElementById('res').innerHTML = "Cursor inside textbox"
@@ -23,7 +154,8 @@ function App()
     </>
   )
 }
-export default App
+export default App*/
+
 //React Event - onChange
 /*function App()
 {
@@ -132,12 +264,12 @@ class App extends React.Component
     return(
       <>
         <h1><center>Passing argument using class constructor</center></h1>
-        <h2>Student Roll number:{this.props.myobj.rno}</h2>
-        <h2>Student name:{this.props.myobj.sname}</h2>
-        <h2>Student mark average:{this.props.myobj.marks.avg}</h2>
-        <h2>Student tamil mark:{this.props.myobj.marks.tamil}</h2>
-        <h2>Student english mark:{this.props.myobj.marks["english"]}</h2>
-        <h2>Student maths mark:{this.props.myobj["marks"]["maths"]}</h2>
+        <h2>Student Roll number:{this.state.myobj.rno}</h2>
+        <h2>Student name:{this.state.myobj.sname}</h2>
+        <h2>Student mark average:{this.state.myobj.marks.avg}</h2>
+        <h2>Student tamil mark:{this.state.myobj.marks.tamil}</h2>
+        <h2>Student english mark:{this.state.myobj.marks["english"]}</h2>
+        <h2>Student maths mark:{this.state.myobj["marks"]["maths"]}</h2>
       </>
     )
   }
