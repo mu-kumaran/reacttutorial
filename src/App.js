@@ -1,3 +1,89 @@
+//React Hooks
+
+//React - useForm
+
+//React - useEffect()
+
+/*import { useState } from "react"
+
+function App(){
+  const [un,setUn] = useState("-")
+  const [pw,setPw] = useState("*")
+  const [city,setCity] = useState("*")
+  const dis = (event)=>{
+    if(event.target.id === "un")
+      setUn(event.target.value)
+    if(event.target.id === "pw")
+      setPw(event.target.value)
+    if(event.target.id === "city")
+      setCity(event.target.value)
+  }
+  const show = (event) =>{
+    var sobj={
+      uname: un,
+      pword: pw,
+      city: city
+    }
+    console.log(sobj)
+  }
+  return(
+    <>
+    <h1>React Hooks - useState</h1>
+    username:<input type="text" id="un" value={un} onChange={(e)=>dis(e)}></input><br></br>
+    password:<input type="password" id="pw" value={pw} onChange={(e)=>dis(e)}></input><br></br>
+    city:<input type="text" id="city" value={city} onChange={(e)=>dis(e)}></input><br></br>
+    <button onClick={show}>json</button>
+    </>
+  )
+}
+export default App*/
+
+/*import {useState, useEffect} from "react"
+function App(){
+
+  const [count,setCount] = useState(0)
+  useEffect(()=>{
+    setTimeout(()=>{document.title = "gowthaman"+count},5000)
+  })
+
+  const dis = ()=>{
+    document.title = "manoj"
+    setCount(count+1)
+  }
+  return(
+    <>
+    <h1>React Hooks - useEffect()</h1>
+    <button onClick={dis}>click me</button>
+    <h2>count: {count}</h2>
+    </>
+  )
+}
+export default App*/
+
+//React - useState()
+/*import { useState } from "react";
+function App(){
+  const[name,setName] = useState("----")
+  const[count,setCount] = useState(0)
+ 
+  const dis = (e)=>{
+    var k = e.target.value
+    setName(e.target.value)
+    setCount(count+1)
+    document.getElementById("res").innerHTML = "k = "+k; 
+  }
+  return(
+    <>
+    <h2>React Hooks - useState()</h2>
+    <input type="text" value={name} onChange={(event)=>dis(event)}></input><br></br>
+    <div id="res"></div>
+    name = {name} <br></br> 
+    count = {count}
+    </>
+  )
+}
+export default App*/
+
 //React - Event.target.type
 
 /*const App = () => {
@@ -248,7 +334,8 @@ const App = () => {
   )
 }
 
-export default App*/
+export default App */
+
 
 //Passing argument using class constructor
 /*import React from 'react'
