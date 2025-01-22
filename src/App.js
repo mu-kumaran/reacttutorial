@@ -1,8 +1,60 @@
 //React Hooks
 
-//React - useForm
+//React Hooks - useForm with Error handling
+/*import { useForm } from "react-hook-form";
+function App()
+{
+  const {register,handleSubmit,formState:{errors}} = useForm()
+  const dis = (sobj) =>{
+    console.log(sobj)
+    console.log(sobj.unam)
+    console.log(sobj.pwd)
+    console.log(sobj.city)
+  }
+  return(
+    <form onSubmit={handleSubmit(dis)}>
+    <h1>React Hook - useForm with Error handling</h1>
+    username: <input type="text" {...register("unam",{required:true,minLength:3})}></input>
+    {errors.unam && errors.unam.type === "required" && "Must Fill username"}
+    {errors.unam && errors.unam.type === "minLength" && "Type 3 chars"}
+    <br></br>
+    password: <input type="password" {...register("pwd",{required:true,minLength:5})}></input>
+    {errors.pwd && errors.pwd.type === "required" && <font color="red">"Must fill password"</font>}
+    {errors.pwd && errors.pwd.type === "minLength" && <font color="red">"type atleast 5 chars"</font>}
+    <br></br>
+    city: <input type="text" {...register("city",{maxLength:10})}></input>
+    {errors.city && errors.city.type === "maxLength" && "Donot exceed 10 chars"}
+    <br></br>
+    <input type="submit"></input><br></br>
+    </form>
+  )
+}
+export default App*/
 
-//React - useEffect()
+//React Hooks - useForm
+/*import { useForm } from "react-hook-form";
+function App()
+{
+  const {register,handleSubmit} = useForm()
+  const dis = (sobj) =>{
+    console.log(sobj)
+    console.log(sobj.unam)
+    console.log(sobj.pwd)
+    console.log(sobj.city)
+  }
+  return(
+    <form onSubmit={handleSubmit(dis)}>
+    <h1>React Hook - useForm</h1>
+    username: <input type="text" {...register("unam")}></input><br></br>
+    password: <input type="password" {...register("pwd")}></input><br></br>
+    city: <input type="text" {...register("city")}></input><br></br>
+    <input type="submit"></input><br></br>
+    </form>
+  )
+}
+export default App */
+
+//React Hooks- useEffect()
 
 /*import { useState } from "react"
 
@@ -60,7 +112,7 @@ function App(){
 }
 export default App*/
 
-//React - useState()
+//React Hooks - useState()
 /*import { useState } from "react";
 function App(){
   const[name,setName] = useState("----")
