@@ -1,5 +1,59 @@
 //React - class - Life cycle components
 
+//Update
+import { Component } from "react";
+class App extends Component
+{
+  constructor(props)
+  {
+    super(props)
+    console.log("Constructor called")
+    this.state = this.props.myobj;
+    this.state.curdt = new Date();
+  }
+  componentDidMount(){
+    setTimeout(()=>{this.setState({rno:1001})},4000)
+  }
+  componentDidUpdate(){
+    document.getElementById("r1").innerHTML = "Component updated"
+  }
+  shouldComponentUpdate(){
+    return true; 
+    //return false will restrict the component updation
+  }
+  getSnapshotBeforeUpdate(prevState,prevProps)
+  {
+    document.getElementById("r2").innerHTML = "Old value: "+ prevProps.rno+" "+"Time: "+prevProps.curdt;
+    document.getElementById("r3").innerHTML = "New value: "+ this.state.rno+" "+"Time: "+ Date();
+
+    return this.state
+    //return null;
+  }
+  render()
+  {
+    const updatefun = ()=>{
+      var newrno = parseInt(document.getElementById("t1").value);
+      this.setState({rno:newrno})
+    }
+    const reloadfun = ()=>{
+      window.location.reload()
+    }
+    return(
+      <>
+      <h1>Update lifecycle components</h1>
+      <h2>Rollno:{this.state.rno}</h2>
+      <div id="r1"></div>
+      <div id="r2"></div>
+      <div id="r3"></div>
+      <input type="text" id="t1" placeholder="Enter new rno"></input>
+      <button onClick={updatefun}>Update rollno</button>
+      <button onClick={reloadfun}>Refresh</button>
+      </>
+    )
+  }
+}
+export default App
+
 //Mount
 /*import React from "react";
 class App extends React.Component
@@ -13,6 +67,11 @@ class App extends React.Component
       sname: this.props.myobj.sname
     }
     console.log("constructor called")
+  }
+  componentDidMount()
+  {
+    setTimeout(()=>{this.setState({rno:1001})},4000);
+    //this.setState({rno:1001})
   }
   render()
   {
