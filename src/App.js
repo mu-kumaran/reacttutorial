@@ -1,7 +1,7 @@
 //React - class - Life cycle components
 
 //Update
-import { Component } from "react";
+/*import { Component } from "react";
 class App extends Component
 {
   constructor(props)
@@ -24,7 +24,7 @@ class App extends Component
   getSnapshotBeforeUpdate(prevState,prevProps)
   {
     document.getElementById("r2").innerHTML = "Old value: "+ prevProps.rno+" "+"Time: "+prevProps.curdt;
-    document.getElementById("r3").innerHTML = "New value: "+ this.state.rno+" "+"Time: "+ Date();
+    document.getElementById("r3").innerHTML = "New value: "+ this.state.rno+" "+"Time: "+ new Date();
 
     return this.state
     //return null;
@@ -52,7 +52,7 @@ class App extends Component
     )
   }
 }
-export default App
+export default App*/
 
 //Mount
 /*import React from "react";
