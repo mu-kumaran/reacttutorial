@@ -1,4 +1,68 @@
+//React - class - Life cycle components
+
+//Mount
+/*import React from "react";
+class App extends React.Component
+{
+  constructor(props)
+  {
+    super(props)
+    //this.state = props.myobj;
+    this.state={
+      rno: this.props.myobj.rno,
+      sname: this.props.myobj.sname
+    }
+    console.log("constructor called")
+  }
+  render()
+  {
+    return(
+      <>
+      <h1>This is lifecycle of react - only class component</h1>
+      <h2>Roll number: {this.state.rno}</h2>
+      <h2>Student name: {this.state.sname}</h2>
+      </>
+    )
+  }
+}
+export default App*/
+
 //React Hooks
+
+//React Hooks - passing object using props
+/*import{useState} from "react"
+function App(props)
+{
+  const[obj,setObj] = useState(props.myobj);
+  const show = ()=>{
+    setObj({rno:1009, sname:"Kathik"})
+  }
+  return(
+    <>
+      <h1>React Hooks - passing object using props</h1>
+      <h2>{obj.rno}</h2>
+      <h2>{obj.sname}</h2>
+      <button onClick={show}>Change</button>
+    </>   
+  )
+}
+export default App*/
+
+//React Hooks - using props
+/*import {useState} from "react"
+function App(props)
+{
+  const[rno,setRno] = useState(props.myobj.rno);
+  return(
+    <>
+      <h1>React Hooks - using props</h1>
+      <h2>{rno}</h2>
+      {props.myobj.sname}
+    </>
+  )
+
+}
+export default App*/
 
 //React Hooks - useForm with Error handling
 /*import { useForm } from "react-hook-form";
