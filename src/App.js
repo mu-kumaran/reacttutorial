@@ -1,5 +1,63 @@
 //React - class - Life cycle components
 
+//Unmount
+/*import {Component} from "react";
+class Child extends Component
+{
+  componentWillUnmount()
+  {
+    console.log("component removed")
+  }
+  render()
+  {
+    return(
+      <div>
+        <h1>This is Child component</h1>
+        <h1>This is Child component</h1>
+        <h1>This is Child component</h1>
+        <h1>This is Child component</h1>
+        <hr></hr>
+      </div>
+    )
+  }
+}
+class App extends Child
+{
+  constructor()
+  {
+    super()
+    this.state={
+      show: true,
+      msg: ""
+    }
+  }
+  hideComp = ()=>{
+   this.setState({show:false,msg:"removed child"})
+  }
+  render()
+  {
+    let isShow
+    if (this.state.show===true)
+    {
+      isShow = <Child></Child>
+    }
+    return(
+      <>
+      {isShow}
+      <h1>This is App component</h1>
+      <h1>This is App component</h1>
+      <h1>This is App component</h1>
+      <h1>This is App component</h1>
+      <button onClick={this.hideComp}>Remove child</button>
+      <br></br>
+      {this.state.msg}
+      </>
+    )
+  }
+
+}
+export default App*/
+
 //Update
 /*import { Component } from "react";
 class App extends Component
@@ -12,7 +70,7 @@ class App extends Component
     this.state.curdt = new Date();
   }
   componentDidMount(){
-    setTimeout(()=>{this.setState({rno:1001})},4000)
+    setTimeout(()=>{this.setState({rno:1001,curdt:new Date()})},4000)
   }
   componentDidUpdate(){
     document.getElementById("r1").innerHTML = "Component updated"
@@ -33,7 +91,7 @@ class App extends Component
   {
     const updatefun = ()=>{
       var newrno = parseInt(document.getElementById("t1").value);
-      this.setState({rno:newrno})
+      this.setState({rno:newrno,curdt:new Date()})
     }
     const reloadfun = ()=>{
       window.location.reload()
