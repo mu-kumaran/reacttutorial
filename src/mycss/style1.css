@@ -1,0 +1,20 @@
+.nav-bar{
+    background-color: orange;
+    background-image: url("../images/Manoj_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+h1{
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+}

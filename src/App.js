@@ -1,3 +1,43 @@
+// React - using font awesome library
+/*
+import React from 'react'
+import{FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import{faGear,faUser,faHouse,faGauge} from "@fortawesome/free-solid-svg-icons"
+import './mycss/style1.css'
+
+const App = () => {
+  return (
+    <div class="nav-bar">
+      <nav style={{backgroundColor:"Yellow", color:"red", fontSize:"25px", fontWeight:"bold"}}>
+        <div>
+        <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>&nbsp;
+        <a href="#">Menu1</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <div>
+        <FontAwesomeIcon icon={faGear}></FontAwesomeIcon>&nbsp;
+        <a href="#">Menu2</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <div>
+        <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>&nbsp;
+        <a href="#">Menu3</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+        <div>
+        <FontAwesomeIcon icon={faGauge} style={{backgroundColor:"blue"}}></FontAwesomeIcon>&nbsp;
+        <a href="#">Menu4</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        
+      </nav>
+
+      <h1>Third Party Library</h1>
+    </div>
+  )
+}
+
+export default App */
+
 // React - AXIOS
 
 /*import axios from "axios"
