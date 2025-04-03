@@ -1,0 +1,35 @@
+React installation
+-------------------
+- Node JS package should be installed before installing React JS. For that visit www.nodejs.org
+
+With GIT
+--------
+
+- open github and create repository named as an eg "reacttutorial".
+note: while creating repository don't check 'Add readme' file 
+- In github copy the repository link from code .  code-->copy http link
+opening our drive path in vs code:
+- Go to the required disk drive like D: or E: 
+- right click and select "open with vs code" 
+or
+- select the path and type cmd and press enter. path to our drive will be displayed in cmd. Enter code . (i.e code <space> dot) vs code will be opened with our required path
+- open terminal through view-->open Terminal or ctrl+`
+- as an eg. d:\> will be displayed in Terminal
+- d:/> git clone 'paste our http link' , as an eg. git clone https://github.com/mu.kumaran1991/reacttutorial.git
+- In vs code file--> open folder--> select 'reacttutorial' folder
+- d:/reacttutorial> npm install -g create-react-app
+- d:/reacttutorial> npx create-react-app .     (ie. npx <space> create-react-app <space> dot)
+if error install web-vitals
+- d:/reacttutorial> npm install web-vitals --save-dev
+- d:/reacttutorial> npm start
+
+
+Without GIT
+-----------
+
+- In vs code file--> open folder--> select 'reacttutorial' folder
+- d:/reacttutorial> npm install -g create-react-app
+- d:/reacttutorial> npx create-react-app .     (ie. npx <space> create-react-app <space> dot)
+if error install web-vitals
+- d:/reacttutorial> npm install web-vitals --save-dev
+- d:/reacttutorial> npm start
